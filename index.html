@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TriviaGame</title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <script src="assets/javacript/app.js"> </script> -->
+</head>
+<body>
+    <h1> Totally Trivial trivia </h1>
+
+    <p> How many oceans we have?</p>
+
+    <div id="status" style="background-color:lightblue"></div>
+
+
+    
+    
+</body>
+</html>
+<script type="text/javascript">
+
+    <div class= "container"> 
+    <button> Start Your Game</button>
+    </div>
+
+    function countDown (secs, elem) {
+        console.log(secs)
+        var element = document.getElementById(elem);
+        element.innerHTML="you have" +  secs +  "seconds";
+
+        secs--; 
+
+        
+        
+    }
+
+    
+    var timer;
+        
+        timer = setTimeout(countDown(10,"status"), 2000);
+
+countDown(10,"status");
+
+        //clearInterval(timer)
+
+        var myVar;
+
+function element() {
+    myVar = setInterval(alertFunc, 1000);
+}
+
+function element() {
+    alert("Timer!");
+}
+ var counter = 0;
+ var setIntervalId = setInterval(function(){
+     counter +=1;
+    console.log('secs');
+    if (counter ===10){
+        console.log('clearing the set interval');
+        clearInterval(setIntervalId);
+    }
+},1000);
+
+
+</script>
